@@ -4,8 +4,6 @@
 #define SHCSR04_CM 0
 #define SHCSR04_IN 1
 
-#define SHCSR04_CYCLE 100
-
 class SHCSR04 {
   public:
     explicit SHCSR04() {};
@@ -14,7 +12,7 @@ class SHCSR04 {
 
       pinMode(trigger, OUTPUT);
       digitalWrite(trigger, HIGH);
-      delayMicroseconds(10);
+      pulseIn(trigger, LOW, 10);
       digitalWrite(trigger, LOW);
       pinMode(echo, INPUT);
 
