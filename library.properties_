@@ -1,0 +1,9 @@
+name=SHCSR04
+version=1.0
+author=Helder Rodrigues
+maintainer=Helder Rodrigues
+sentence=Arduino class for sensor HCSR04
+paragraph=measurement function
+category=Sensors
+url=https://github.com/offcircuit/SHCSR04
+architectures=*
