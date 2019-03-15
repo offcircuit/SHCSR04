@@ -11,6 +11,7 @@ class SHCSR04 {
     double measure(uint8_t trigger, uint8_t echo, bool unit = SHCSR04_CM) {
 
       pinMode(trigger, OUTPUT);
+      digitalWrite(trigger, LOW);
       digitalWrite(trigger, HIGH);
       pulseIn(trigger, LOW, 10);
       digitalWrite(trigger, LOW);
