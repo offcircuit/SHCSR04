@@ -17,7 +17,7 @@ class SHCSR04 {
       pulseIn(trigger, LOW, 10);
       digitalWrite(trigger, LOW);
 
-      return double(pulseIn(echo, HIGH)) / (48 + (unit * 90));
+      return double(pulseIn(echo, HIGH)) / (58 + (unit * 90));
     }
 };
 
