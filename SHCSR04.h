@@ -8,7 +8,7 @@ class SHCSR04 {
   public:
     explicit SHCSR04() {};
 
-    double measure(uint8_t trigger, uint8_t echo, bool unit = SHCSR04_CM) {
+    double read(uint8_t trigger, uint8_t echo, bool unit = SHCSR04_CM) {
 
       pinMode(trigger, OUTPUT);
       pinMode(echo, INPUT);
