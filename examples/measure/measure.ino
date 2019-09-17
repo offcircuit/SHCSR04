@@ -11,7 +11,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   Serial.println("-------------------");
   Serial.print("measure = ");
-  Serial.print(hcsr04.measure(11, 12));
+  Serial.print(hcsr04.read(11, 12));
   Serial.println("cm");
   Serial.println("");
   delay(500);
