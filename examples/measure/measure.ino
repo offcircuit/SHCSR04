@@ -12,7 +12,7 @@ void loop() {
   Serial.println("-------------------");
   Serial.print("measure = ");
   Serial.print(hcsr04.read(4, 5));
-  Serial.println("cm");
+  Serial.println(" cm");
   Serial.println();
   delay(500);
 }
