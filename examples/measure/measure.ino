@@ -4,15 +4,15 @@ SHCSR04 hcsr04;
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
   Serial.println("-------------------");
   Serial.print("measure = ");
-  Serial.print(hcsr04.read(11, 12));
+  Serial.print(hcsr04.read(4, 5));
   Serial.println("cm");
-  Serial.println("");
+  Serial.println();
   delay(500);
 }
